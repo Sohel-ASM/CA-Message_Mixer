@@ -52,3 +52,7 @@ const encode = function (string) {
     }
     return string;
 };
+// palindrome
+const palindrome = function (str) {
+    return str + ' ' + reverseWord(str);
+};
