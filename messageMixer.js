@@ -23,3 +23,11 @@ const capitalizeFirstCharacterOfWords = function (string) {
 const reverseWord = function (word) {
     return word.split("").reverse().join("");
 };
+// reversing characters in place
+const reverseAllWords = function (sentence) {
+    let words = sentence.split(" ");
+    for (let i = 0; i < words.length; i++) {
+        words[i] = reverseWord(words[i]);
+    }
+    return words.join(" ");
+};
