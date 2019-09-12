@@ -39,3 +39,16 @@ const replaceFirstOccurence = function (string, toBeReplaced, replaceWith) {
 const replaceAllOccurences = function (string, toBeReplaced, replaceWith) {
     return string.split(toBeReplaced).join(replaceWith);
 };
+// encode text by swapping certain characters for other characters
+const encode = function (string) {
+    let replacementObject = {
+        "a": "@",
+        "s": "$",
+        "i": "!",
+        "o": "0"
+    };
+    for (let key in replacementObject) {
+        string = replaceAllOccurences(string, key, replacementObject[key]);
+    }
+    return string;
+};
