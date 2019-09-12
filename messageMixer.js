@@ -35,3 +35,7 @@ const reverseAllWords = function (sentence) {
 const replaceFirstOccurence = function (string, toBeReplaced, replaceWith) {
     return string.replace(toBeReplaced, replaceWith);
 };
+// replace all occurence of a string
+const replaceAllOccurences = function (string, toBeReplaced, replaceWith) {
+    return string.split(toBeReplaced).join(replaceWith);
+};
