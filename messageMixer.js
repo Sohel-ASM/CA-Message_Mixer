@@ -19,3 +19,7 @@ const capitalizeFirstCharacterOfWords = function (string) {
     }
     return arr.join(" ");
 };
+// reverse a message's words in place
+const reverseWord = function (word) {
+    return word.split("").reverse().join("");
+};
