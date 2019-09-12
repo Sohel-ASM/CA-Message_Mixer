@@ -31,3 +31,7 @@ const reverseAllWords = function (sentence) {
     }
     return words.join(" ");
 };
+// replace the first occurence of a string
+const replaceFirstOccurence = function (string, toBeReplaced, replaceWith) {
+    return string.replace(toBeReplaced, replaceWith);
+};
