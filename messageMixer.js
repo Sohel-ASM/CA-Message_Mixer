@@ -56,3 +56,7 @@ const encode = function (string) {
 const palindrome = function (str) {
     return str + ' ' + reverseWord(str);
 };
+// piglatin
+const pigLatin = function (sentence, character) {
+    return sentence.split(' ').join(character + ' ');
+};
